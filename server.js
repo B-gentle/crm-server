@@ -12,7 +12,10 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use(bodyParser.json());
-app.use(cors())
+app.use(cors({
+    origin: ["https://nriherbal.com/", "http://localhost"],
+    allowedHeaders: ["https://nriherbal.com/", "http://localhost"]
+}))
 
 // Routes Middleware
 app.use('/api/users', userRoute)
