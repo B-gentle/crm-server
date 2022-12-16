@@ -15,7 +15,8 @@ app.use(bodyParser.json());
 app.use(cors({
     origin: ["https://virtualoffice.nriherbal.com", "http://localhost"],
     methods: ['GET', 'PUT', 'POST', 'DELETE', 'PATCH'],
-    allowedHeaders: ["https://virtualoffice.nriherbal.com", "http://localhost"]
+    allowedHeaders: ["https://virtualoffice.nriherbal.com", "http://localhost"],
+    preflightContinue: true
     
 }))
 
