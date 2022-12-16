@@ -16,8 +16,7 @@ app.use(cors({
     origin: ["https://virtualoffice.nriherbal.com", "http://localhost"],
     methods: ['GET', 'PUT', 'POST', 'DELETE', 'PATCH'],
     allowedHeaders: ["https://virtualoffice.nriherbal.com", "http://localhost"],
-    preflightContinue: true
-    
+    preflightContinue: false
 }))
 
 // Routes Middleware
